@@ -1,0 +1,23 @@
+{
+  "name": "serrelookup",
+  "version": "1.0.0",
+  "description": "Getting data from \"LA SERRE\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romain-koenig/serreLookup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romain-koenig/serreLookup/issues"
+  },
+  "homepage": "https://github.com/romain-koenig/serreLookup#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
