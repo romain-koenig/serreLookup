@@ -8,9 +8,7 @@ require('dotenv').config();
 
 const profile = process.env.SERRE_PROFILE_ID;
 
-logging(profile);
-
-
+//logging(profile);
 
 
 // REAL TREATMENT STARTS HERE
@@ -22,13 +20,15 @@ logging(profile);
 			method: 'GET'
 		});
 
-		logging(response);
+		//logging(response);
 
-		const profileInfo = await response.text();
+		const profileInfoJSON = await response.text();
 
-		logging(profileInfo);
+		//logging(profileInfoJSON);
 
-		
+		const profileInfo = JSON.parse(profileInfoJSON);
+
+		logging(profileInfo[0].xprofile.groups[1].fields[151].value.rendered);
 	}
 	catch (error) {
 		console.error(error);
